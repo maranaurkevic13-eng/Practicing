@@ -1,0 +1,100 @@
+body {
+    font-family: "DM Sans", sans-serif;
+    color: #FFFFFF;
+    background-color: #121212;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+}
+
+/* header */
+
+.page-header {
+    max-width: 100%;
+}
+
+.page-nav {
+    align-items: center;
+    display:flex;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    width: 982px;
+    height: 60px;
+}
+
+.logo {
+   padding: 22px 0 22px 50px;
+}
+
+.page-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.page-link {
+    padding: 21px 0;
+    display: block;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.page-link:hover {
+    color: #FFFFFF;
+}
+
+.page-link:focus {
+    color: #FFFFFF;
+}
+
+.page-container {
+    display: flex;
+    align-items: center;
+    background-color: #121212;
+}
+
+.page-btn {
+    display: block;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 16px 84px;
+    background: #FFFFFF;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    text-transform: uppercase;
+    color: #121212;
+    min-width: 239px;
+    height: 60px;
+    max-width: 100%;
+    text-align: center;
+    border: none;
+    margin-left: 20px;
+
+}
