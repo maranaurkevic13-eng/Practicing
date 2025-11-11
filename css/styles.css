@@ -2,6 +2,7 @@ body {
     font-family: "DM Sans", sans-serif;
     color: #FFFFFF;
     background-color: #121212;
+    margin: 0;
 }
 
 ul {
@@ -14,23 +15,41 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
     margin: 0;
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 1270px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 150px 0;
 }
 
 /* header */
 
 .page-header {
     max-width: 100%;
+    padding-top: 20px;
+}
+
+.page-container {
+    max-width: 1270px;
 }
 
 .page-nav {
@@ -39,7 +58,7 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
     width: 982px;
-    height: 60px;
+    height: 60px;;
 }
 
 .logo {
@@ -65,7 +84,7 @@ img {
 }
 
 .page-link:hover {
-    color: #FFFFFF;
+    color: #BEA69E;
 }
 
 .page-link:focus {
@@ -97,4 +116,92 @@ img {
     border: none;
     margin-left: 20px;
 
+}
+
+.page-btn:hover {
+    background-color: #121212;
+    color: #BEA69E;
+}
+
+.hero {
+    padding: 0;
+}
+
+.hero-container {
+    display: flex;
+    border-radius: 30px;
+    background-color: #1D1D1D;
+    margin-top: 80px;
+
+}
+
+.hero-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 563px;
+    padding-left: 50px;
+}
+
+.hero-title {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 106%;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    width: 563px;
+    height: 204px;;
+    padding: 80px 0 20px 0px;
+}
+
+.hero-title-item {
+    font-style: italic;
+    font-weight: 400;
+    color: #BEA69E;
+}
+
+.her-text {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    max-width: 418px;
+    height: 54px;
+}
+
+.hero-photo {
+    margin-right: 100px;
+    display: flex;
+    margin-left: auto;
+    padding-top: 80px;
+}
+
+.title {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 150px 0;
+    max-width: 100%;
+    height: 112px;
+}
+
+.title-text {
+    margin: 24px 100px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 59px;
+    line-height: 108%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.title-text-descr {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 59px;
+    line-height: 108%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #BEA69E;
 }
