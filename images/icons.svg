@@ -1,0 +1,22 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-Arrow-2-Stroke" viewBox="0 0 64 32">
+<path d="M44.444 0l19.556 15.396-19.556 15.396v-12.729h-44.444v-5.333h44.444v-12.729z"></path>
+</symbol>
+<symbol id="icon-arrow-narrow-up-right" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.0800" d="M8 24l16-16"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.0800" d="M13.333 8h10.667v10.667"></path>
+</symbol>
+<symbol id="icon-star" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M16 2.667l4.12 8.347 9.213 1.347-6.667 6.493 1.573 9.173-8.24-4.333-8.24 4.333 1.573-9.173-6.667-6.493 9.213-1.347 4.12-8.347z"></path>
+</symbol>
+<symbol id="icon-heroicons-solid_menu" viewBox="0 0 32 32">
+<path d="M4.799 8.001c0-0.424 0.169-0.831 0.469-1.131s0.707-0.469 1.131-0.469h19.2c0.424 0 0.831 0.169 1.131 0.469s0.469 0.707 0.469 1.131-0.169 0.831-0.469 1.131c-0.3 0.3-0.707 0.469-1.131 0.469h-19.2c-0.424 0-0.831-0.169-1.131-0.469s-0.469-0.707-0.469-1.131z"></path>
+<path d="M4.799 16.001c0-0.424 0.169-0.831 0.469-1.131s0.707-0.469 1.131-0.469h19.2c0.424 0 0.831 0.169 1.131 0.469s0.469 0.707 0.469 1.131c0 0.424-0.169 0.831-0.469 1.131s-0.707 0.469-1.131 0.469h-19.2c-0.424 0-0.831-0.169-1.131-0.469s-0.469-0.707-0.469-1.131z"></path>
+<path d="M4.799 24.001c0-0.424 0.169-0.831 0.469-1.131s0.707-0.469 1.131-0.469h19.2c0.424 0 0.831 0.169 1.131 0.469s0.469 0.707 0.469 1.131c0 0.424-0.169 0.831-0.469 1.131s-0.707 0.469-1.131 0.469h-19.2c-0.424 0-0.831-0.169-1.131-0.469s-0.469-0.707-0.469-1.131z"></path>
+</symbol>
+<symbol id="icon-close-black-18dp-2-1" viewBox="0 0 32 32">
+<path d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"></path>
+</symbol>
+</defs>
+</svg>
