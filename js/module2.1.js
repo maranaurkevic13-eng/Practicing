@@ -26,7 +26,7 @@ console.log(shopGoods(250, 175));
 function temperatureCelc(temp) {
     if (temp < 0) {
         return `Замерзає`;
-    } else if(temp > 0 && temp < 25) {
+    } else if(temp >= 0 && temp <= 25) {
         return `Нормальна температура`;
     } else {
         return `Спекотно`;
@@ -121,9 +121,9 @@ console.log(createEl());
 function peopleAge(age) {
     if (age < 12) {
         return `Дитина`;
-    } else if(age > 12 && age < 18) {
+    } else if(age >= 12 && age <= 18) {
         return `Підліток`;
-    } else if (age > 18 && age < 60) {
+    } else if (age > 18 && age <= 60) {
         return `Дорослий`;
     } else {
         return `Пенсіонер`;
@@ -134,6 +134,106 @@ console.log(peopleAge(66));
 
 // ------------------TASK 11----------------
 
-// function systemEl(isLoggedIn, hasAdminRights) {
-    
-// }
+function systemEl(isLoggedIn, hasAdminRights) {
+    if (isLoggedIn || hasAdminRights) {
+        return `Адмін-сторінка`;
+    } else if (isLoggedIn) {
+        return `Користувач`;
+    } else {
+        return `Гість`;
+    }
+};
+console.log(systemEl('Увійшла', 'Я адміністратор'));
+console.log(systemEl());
+
+// ------------ TASK 12---------------
+
+function driveNumber(speed) {
+    if (speed < 60) {
+        return `Безпечно`;
+    } else if (speed >= 60 && speed <= 100) {
+        return `Увага`;
+    } else {
+        return `Небезпечно`;
+    }
+};
+console.log(driveNumber(60));
+console.log(driveNumber(110));
+
+// -----------------TASK 13 ----------
+
+function ageSituation(age) {
+    if (age < 18) {
+        return `He можна купувати алкоголь`;
+    } else {
+        return `Можна купувати алкоголь`;
+    }
+};
+console.log(ageSituation(18));
+console.log(ageSituation(15));
+
+// --------------TASK 14----------------
+
+function evenElements(number) {
+    if (number % 2 === 0) {
+        return `Парне`;
+    } else {
+        return `Непарне`;
+    }
+};
+console.log(evenElements(4));
+console.log(evenElements(23));
+
+// ---------------TASK 15---------
+
+function passwordAcount(password, confirmPassword) {
+    if (password === confirmPassword) {
+        return `Паролі збігаються`;
+    } else {
+        return `Паролі не збігаються`;
+    }
+};
+console.log(passwordAcount('marianna21', 'marianna21'));
+console.log(passwordAcount('marianna21', 'marianna23'));
+
+// -------------TASK 16----------------
+
+function numberElem(number1, number2) {
+    if (number1 > number2) {
+        return `Перше більше`;
+    } else if (number1 === number2) {
+        return `Рівні`;
+     } else {
+        return `Перше менше`;
+    }
+}; 
+console.log(numberElem(5, 2));
+console.log(numberElem(5, 5));
+
+// -----------------TASK 17---------------
+
+function batteryEl(isBatteryFull) {
+    if (isBatteryFull === 100) {
+        return `He потрібно заряджати`;
+    } else {
+        return `Заряджати`; 
+    }
+};
+console.log(batteryEl(100));
+console.log(batteryEl(55));
+
+// ----------------------TASK 18-------------------
+
+function hasLicense(hasCar, license) {
+    if (hasCar && license) {
+        return `Можете водити машину`;
+    } else {
+        return `Водити заборонено`;
+    }
+};
+console.log(hasLicense('Маю машину',));
+console.log(hasLicense('Маю машину', 'Маю права'))
+
+// --------------TASK 19--------------
+
+// Задача-40
