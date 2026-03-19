@@ -236,4 +236,72 @@ console.log(hasLicense('Маю машину', 'Маю права'))
 
 // --------------TASK 19--------------
 
-// Задача-40
+function haveMeeting(currentDay, hasMeeting, isHoliday) {
+    if (currentDay === 'Понеділок' &&
+        currentDay === 'Середа' &&
+        currentDay === 'Пятниця' ||
+        hasMeeting === true ||
+        isHoliday === false) {
+        return `Є зустріч`;
+    } else {
+        return `Немає зустрічі`;
+    }
+};
+console.log(haveMeeting('Понеділок', true, false));
+console.log(haveMeeting('Субота', false, true));
+
+// ---------------------------TASK 20 ------------------
+
+function priceElem(itemPrice, isDiscounted, discountAmount) {
+    if (itemPrice > 1000 && isDiscounted === true && discountAmount >= 10) {
+        return `Скидка доступна`;
+    } else {
+        return `Скидка не доступна`;
+    }
+};
+console.log(priceElem(1200, true, 15));
+console.log(priceElem(1500, false, 20));
+
+// -------------TASK 21-----------------------
+
+function studentGradeElem(grade) {
+    switch (grade) {
+        case "A":
+            return "Відмінно";
+        case "B":
+            return "Добре";
+        case "C":
+            return "Задовільно";
+        case "D":
+        case "F":
+            return "Незадовільно";
+    }
+};
+console.log(studentGradeElem("A"));
+console.log(studentGradeElem("D"));
+
+// ----------------TASK 22------------
+
+function animalType(animal) {
+    switch (animal) {
+        case "Кішка":
+        case "Собака":
+        case "Кінь":
+            return "Ссавець";
+        case "Голуб":
+        case "Орлан":
+        case "Горобець":
+            return "Птах";
+        case "Лосось":
+        case "Тунець":
+        case "Тріска":
+            return "Риба";
+        case "Ящірка":
+        case "Черепаха":
+        case "Змія":
+            return "Рептилія";
+    }
+};
+console.log(animalType("Лосось"));
+console.log(animalType("Кінь"));
+console.log(animalType("Ящірка")); 
