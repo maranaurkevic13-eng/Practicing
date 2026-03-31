@@ -102,7 +102,7 @@ console.log(multiplyAll(2, 3, 4));
 
 function longestString(...strings) {
   let longest = strings[0];
-  for (let str of strings) {
+  for (const str of strings) {
     if (str.length > longest.length) {
       longest = str;
     }
