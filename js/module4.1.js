@@ -215,14 +215,118 @@ console.log(bankAcount.checkBalance());
 
 // --------------------------------
 
-// const libraryCatalog = {
-//     books: [],
+const libraryCatalog = {
+    books: [],
 
-//     addBook(book) {
-//         this.books.push);
-//     },
+    addBook(book) {
+        this.books.push(book);
+    },
 
-//     findBookByAuthor(author) {
-        
-//     }
-// }
+    findBookByAuthor(author) {
+        return this.books.filter(b => b.author === author);
+    },
+
+    listBook() {
+        this.books.forEach(b => {
+            console.log(`${b.title} - ${b.author}`)
+        })
+    },
+};
+libraryCatalog.addBook({ title: "Місто", author: "Валерян Підмогильний"});
+libraryCatalog.addBook({ title: "Кобзар", author: "Тарас Шевченко"});
+libraryCatalog.addBook({ title: "Захар Беркут", author: "Іван Франко" });
+
+console.log(libraryCatalog.findBookByAuthor('Тарас Шевченко'));
+libraryCatalog.listBook();
+
+// ------------------------------
+
+const shoppingCart = {
+    items: [],
+
+    addItem(item) {
+        this.items.push(item);
+    },
+
+    totalCost() {
+        return this.items.reduce((total, item) => total + item.price, 0);
+    },
+
+    listItems() {
+        this.items.forEach(i => {
+            console.log(`${i.name}`);
+        });
+    },
+};
+shoppingCart.addItem({ name: 'Ваза', price: 150 });
+shoppingCart.addItem({ name: 'Рушник', price: 50 });
+shoppingCart.addItem({ name: 'Кружка', price: 200 });
+shoppingCart.listItems();
+console.log("Загальна вартість:", shoppingCart.totalCost());
+
+// --------------------------------------
+
+const socialNetworkUser = {
+    username: 'Max',
+    friends: [],
+
+    addFriend(friendName) {
+        this.friends.push(friendName);
+    },
+
+    removeFriend(friendName) {
+        this.friends = this.friends.filter(f => f !== friendName);
+    },
+
+    listFriends() {
+        console.log('Саписок друзів: ')
+        this.friends.forEach(f => {
+            console.log(f)
+        })
+    }
+};
+socialNetworkUser.addFriend("Max");
+socialNetworkUser.addFriend("Lilia");
+socialNetworkUser.addFriend("Ivan");
+socialNetworkUser.listFriends();
+socialNetworkUser.removeFriend("Lilia");
+socialNetworkUser.listFriends();
+
+// -------------------------------
+
+const musicPlayer = {
+    songs: [],
+    currentSongs: 0,
+
+    addSongs(song) {
+        this.songs.push(song);
+    },
+
+    play() {
+        console.log(`Відтворюється: ${this.songs[this.currentSongs]}`);
+    },
+
+    pause() {
+        console.log(`Пауза: ${this.songs[this.currentSongs]}`);
+    },
+
+    next() {
+        this.currentSongs = (this.currentSongs + 1) % this.songs.length;
+        this.play();
+    },
+
+    previouse() {
+        this.currentSongs =
+            (this.currentSongs - 1 + this.songs.length) % this.songs.length;
+        this.play();
+    }
+};
+musicPlayer.addSongs("Hate you");
+musicPlayer.addSongs("Love");
+musicPlayer.addSongs("Star boy");
+
+musicPlayer.play();       
+musicPlayer.next();       
+musicPlayer.next();       
+musicPlayer.previouse();   
+musicPlayer.pause();     
